@@ -1,0 +1,807 @@
+body
+	font-family: 'Asap', sans-serif
+	color: #6f6f6f
+	overflow-x: hidden
+
+.container
+	padding: 0
+
+*
+	box-sizing: border-box
+
+button.slick-next.slick-arrow
+	display: none
+
+
+
+.header
+	background: url('../img/main_bg.jpg') center no-repeat
+	background-size: cover
+	padding-top: 30px
+	height: 750px
+	overflow-y: hidden
+	.container
+		padding: 0
+	&_nav
+		ul
+			display: flex
+			list-style: none
+			li
+				margin-right: 30px
+				text-transform: uppercase
+				a
+					text-decoration: none
+					display: block
+					border-bottom: 2px solid transparent
+					color: #333
+					font-weight: 700
+					transition: .5s
+					padding-bottom: 6px
+					font-size: 16px
+					&:hover
+						padding-bottom: 2px
+						border-bottom: 2px solid #333
+	&_main
+		margin-top: 150px
+		img
+			transform: translateY(-120px)
+		h1
+			font-size: 90px
+			color: #4d4d4d
+			margin: 0
+			margin-bottom: 10px
+			font-weight: 500
+		h3
+			color: #909090
+			font-weight: 400
+			font-size: 22px
+			margin: 0
+			margin-bottom: 30px
+
+.img-fluid
+	max-width: 100%
+	display: block
+	margin: auto
+	height: auto
+
+.mobile_menu
+	position: fixed
+	top: 0
+	left: 400%
+	background-color: rgba(0,0,0,.8)
+	transition: .5s
+	ul
+		display: flex
+		list-style-type: none
+		height: 100vh
+		width: 100vw
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		padding: 0
+		li
+			margin: 15px auto
+			a
+				text-decoration: none
+				color: #fff
+				font-weight: 500
+				&:hover
+					color: #fea100
+	.btn_close
+		position: absolute
+		color: #fff
+		top: 35px
+		font-size: 32px
+		right: 35px
+
+button:focus, input:focus
+	outline: none
+
+.mobile_menu_active
+	left: 0
+
+.btn
+	padding: 15px 30px
+	text-transform: uppercase
+	font-weight: 700
+	color: #4d4d4d
+	background-color: transparent
+	border: none
+	cursor: pointer
+	border: 2px solid #4d4d4d
+	width: 160px
+	margin-right: 20px
+	transition: all 0.4s
+	&:last-child
+		margin-right: 0
+	&_1
+		background-color: #fff
+		border: 2px solid #fff
+		&:hover
+			background-color: transparent
+			border: 2px solid #4d4d4d
+			box-shadow: 0px 3px 8px #4d4d4d
+	&_2
+		&:hover
+			background-color: #fff
+			border: 2px solid #fff
+			box-shadow: 0px 3px 8px #4d4d4d
+					
+.img-fluid
+	max-width: 100%
+
+.title
+	text-transform: uppercase
+	font-size: 46px
+	text-transform: uppercase
+	max-width: 300px
+	margin: 0
+	margin-bottom: 10px
+	&::before
+		content: ' '
+		display: block
+		height: 3px
+		width: 60px
+		background-color: #4d4d4d
+		margin-bottom: 15px
+
+
+.about
+	padding: 100px 0
+	p
+		max-width: 475px
+		line-height: 1.4
+		margin: 0
+		margin-bottom: 30px
+	button
+		background-color: transparent
+		text-transform: uppercase
+		font-weight: 500
+		font-size: 16px
+		color: #4d4d4d
+		border: none
+		padding: 20px 40px
+		border: 1px solid #4d4d4d
+		width: 240px
+		cursor: pointer
+		&:hover
+			background-color: #4d4d4d
+			color: #fff
+
+	img
+		// height: 450px
+	
+
+.services
+	padding: 100px 0
+	background-color: #f0f0f0
+	.title
+		max-width: 100%
+		text-align: center
+		margin-bottom: 50px
+		&::before
+			margin: 15px auto
+	&_items
+		text-align: center
+		margin-top: 75px
+		.col-md-4
+			margin: 30px auto
+		p
+			margin: 0
+			max-width: 160px
+			font-weight: 700
+			margin: 15px auto
+			font-size: 20px
+			color: #4d4d4d
+			line-height: 1.4
+			// margin-bottom: 40px
+		img
+			max-height: 62px
+
+.hidden_portfolio
+	display: none
+
+.skills
+	padding: 100px 0
+	.title
+		max-width: 100%
+		text-align: center
+		margin-bottom: 50px
+		&::before
+			margin: 15px auto
+
+.mobile_menu
+	display: none
+
+
+.portfolio
+	padding: 100px 0
+	background-color: #f0f0f0
+	.title
+		max-width: 100%
+		text-align: center
+		margin-bottom: 50px
+		&::before
+			margin: 15px auto
+	&_item
+		&s
+			margin: 50px auto
+		&_1
+			background: url('../img/port1.jpg') center no-repeat
+			width: 340px
+			display: block
+			height: 300px
+			background-size: cover
+			position: relative
+			// margin: 30px auto
+			box-shadow: 0 1px 33px #999
+			&::after
+				content: ' '
+				width: 100%
+				height: 100%
+				opacity: 0
+				position: absolute
+				top: 0
+				left: 0
+				background: rgba(0,0,0,0.6)
+				transition: .3s
+			&:hover::after
+				opacity: 1
+		&_2
+			background: url('../img/port2.jpg') center no-repeat
+			width: 340px
+			display: block
+			height: 300px
+			background-size: cover
+			position: relative
+			// margin: 30px auto
+			box-shadow: 0 1px 33px #999
+			&::after
+				content: ' '
+				width: 100%
+				height: 100%
+				opacity: 0
+				position: absolute
+				top: 0
+				left: 0
+				background: rgba(0,0,0,0.6)
+				transition: .3s
+			&:hover::after
+				opacity: 1
+		&_3
+			background: url('../img/port3.jpg') center no-repeat
+			width: 340px
+			display: block
+			height: 300px
+			background-size: cover
+			position: relative
+			// margin: 30px auto
+			box-shadow: 0 1px 33px #999
+			&::after
+				content: ' '
+				width: 100%
+				height: 100%
+				opacity: 0
+				position: absolute
+				top: 0
+				left: 0
+				background: rgba(0,0,0,0.6)
+				transition: .3s
+			&:hover::after
+				opacity: 1
+		&_4
+			background: url('../img/port4.jpg') center no-repeat
+			width: 340px
+			display: block
+			height: 300px
+			background-size: cover
+			position: relative
+			// margin: 30px auto
+			box-shadow: 0 1px 33px #999
+			&::after
+				content: ' '
+				width: 100%
+				height: 100%
+				opacity: 0
+				position: absolute
+				top: 0
+				left: 0
+				background: rgba(0,0,0,0.6)
+				transition: .3s
+			&:hover::after
+				opacity: 1
+		&_5
+			background: url('../img/port5.jpg') center no-repeat
+			width: 340px
+			display: block
+			height: 300px
+			background-size: cover
+			position: relative
+			// margin: 30px auto
+			box-shadow: 0 1px 33px #999
+			&::after
+				content: ' '
+				width: 100%
+				height: 100%
+				opacity: 0
+				position: absolute
+				top: 0
+				left: 0
+				background: rgba(0,0,0,0.6)
+				transition: .3s
+			&:hover::after
+				opacity: 1
+		&_6
+			background: url('../img/port6.jpg') center no-repeat
+			width: 340px
+			display: block
+			height: 300px
+			background-size: cover
+			position: relative
+			// margin: 30px auto
+			box-shadow: 0 1px 33px #999
+			&::after
+				content: ' '
+				width: 100%
+				height: 100%
+				opacity: 0
+				position: absolute
+				top: 0
+				left: 0
+				background: rgba(0,0,0,0.6)
+				transition: .3s
+			&:hover::after
+				opacity: 1
+	&_button
+		text-align: center
+		margin-left: auto
+		margin-right: auto
+		display: block
+		padding: 20px 45px
+		background-color: transparent
+		border: none
+		font-size: 16px
+		background-color: #fff
+		text-transform: uppercase
+		font-weight: 700
+		box-shadow: 0px 4px 21px #999
+		color: #4d4d4d
+		transition: .4s
+		cursor: pointer
+		border-radius: 3px
+		width: 190px
+		&:hover
+			color: #fff
+			background-color: #333
+
+.test
+	padding: 100px 0
+	.title
+		max-width: 100%
+		text-align: center
+		margin-bottom: 50px
+		&::before
+			margin: 15px auto
+	&_flex
+		display: flex
+		align-items: center
+
+
+	&_slider
+		padding: 105px 75px
+		border: 1px solid #000
+	&_info
+		margin-left: 30px
+		h4
+			font-size: 30px
+			font-weight: 500
+			text-transform: uppercase
+			color: #222
+			margin: 0
+		span
+			display: block
+			font-style: italic
+			font-size: 12px
+			color: #222
+			margin-bottom: 30px
+		p
+			margin: 0
+			line-height: 1.4
+			text-transform: uppercase
+
+.slick-dots li button:before
+	font-size: 24px
+	content: ' '
+	background-color: #000
+	border: 1px solid #000
+	top: -60px
+	background-color: #fff
+	opacity: 1
+
+.slick-dots li.slick-active button:before
+	background-color: #000
+
+.stat
+	margin-bottom: 150px
+	padding: 55px 0px 65px 0
+	background-color: #f0f0f0
+	text-align: center
+	&_img
+		img
+			max-height: 74px
+	&_item
+		h5
+			font-weight: 500
+			font-size: 30px
+			margin: 0
+			margin-top: 25px
+			color: #000
+		p
+			text-transform: uppercase
+			font-size: 24px
+			margin: 0
+			margin-top: 10px
+			color: #000
+
+
+.bot
+	background: url('../img/form_bg.jpg') center no-repeat
+	background-size: cover
+	padding-top: 140px
+	position: relative
+	*
+		// border: 2px solid red
+	.title
+		max-width: 100%
+		text-align: center
+		margin-bottom: 50px
+		color: #fff
+		&::before
+			margin: 15px auto
+			background-color: #fff
+	.form
+		padding-bottom: 55px
+		&_input
+			// border: 2px solid red
+			text-align: center
+			input
+				padding-left: 15px
+				padding-top: 20px
+				padding-bottom: 20px
+				width: 100%
+				border: none
+				padding-right: 50px
+				color: #000
+				font-weight: 700
+				transition: .3s
+				&:focus
+					outline: none
+					outline: 2px solid #aaa
+				&::placeholder
+					color: #000
+					font-weight: 700
+			textarea
+				padding-left: 15px
+				padding-top: 20px
+				padding-bottom: 20px
+				width: 100%
+				margin-top: 50px
+				padding-right: 150px
+				resize: none
+				height: 250px
+				border: none
+				color: #000
+				font-weight: 700
+				transition: .3s
+				&:focus
+					outline: none
+					outline: 2px solid #aaa
+				&::placeholder
+					color: #000
+					font-weight: 700
+	button
+		background: #fff
+		border: none
+		padding: 20px 45px
+		text-transform: uppercase
+		font-weight: 500
+		vertical-align: 
+		font-size: 16px
+		color: #4d4d4d
+		cursor: pointer
+		box-shadow: 0 1px 3px #777
+		cursor: pointer
+		vertical-align: middle
+		display: block
+		margin: 30px auto
+		border-radius: 1px
+		transition: all 0.4s
+		&:hover
+			background-color: darken(#fff, 10%)
+			box-shadow: 0 2px 3px #aaa
+		img
+			margin-left: 5px
+			transform: translateY(1px)
+	&_btn
+		background-color: #fff
+		color: #000
+		padding: 5px 8px
+		position: absolute
+		bottom: 350px
+		right: 50px
+.footer
+	border-top: 2px solid #fff
+	padding-bottom: 40px
+	&_bot
+		margin-top: 25px
+		display: flex
+		justify-content: center
+		align-items: center
+		p
+			text-align: center
+			color: #fff
+			font-weight: 500
+			font-size: 18px
+			margin-right: auto
+			padding-right: 225px
+
+	&_socials
+		display: block
+		width: 225px
+		margin-right: auto
+		a
+			display: inline-block
+			width: 27px
+			height: 27px
+			transition: .3s
+	&_item
+		&_1
+			margin-right: 8px
+			background: #fff url('../img/footer_links.png') center no-repeat
+			background-position: 9px 4px
+			&:hover
+				background: #0084b4 url('../img/footer_links.png') center no-repeat
+				background-position: 9px -30px
+		&_2
+			margin-right: 8px
+			background: #fff url('../img/footer_links.png') center no-repeat
+			background-position: -28px 5px
+			&:hover
+				background: #0084b4 url('../img/footer_links.png') center no-repeat
+				background-position: -28px -29px
+		&_3
+			margin-right: 8px
+			background: #fff url('../img/footer_links.png') center no-repeat
+			background-position: -62px 5px
+			&:hover
+				background: #0084b4 url('../img/footer_links.png') center no-repeat
+				background-position: -62px -29px
+		&_4
+			margin-right: 8px
+			background: #fff url('../img/footer_links.png') center no-repeat
+			background-position: -98px 5px
+			&:hover
+				background: #0084b4 url('../img/footer_links.png') center no-repeat
+				background-position: -98px -29px
+		&_5
+			margin-right: 8px
+			background: #fff url('../img/footer_links.png') center no-repeat
+			background-position: -133px 5px
+			&:hover
+				background: #0084b4 url('../img/footer_links.png') center no-repeat
+				background-position: -133px -29px
+		&_6
+			margin-right: 0px
+			background: #fff url('../img/footer_links.png') center no-repeat
+			background-position: -170px 4px
+			&:hover
+				background: #0084b4 url('../img/footer_links.png') center no-repeat
+				background-position: -170px -30px
+
+.nav_btn
+	display: none
+
+
+@media (max-width: 1199.98px)
+	.header
+		&_main
+			h1
+				font-size: 64px
+	.portfolio_item_1
+		width: 100%
+	.portfolio_item_2
+		width: 100%
+	.portfolio_item_3
+		width: 100%
+	.portfolio_item_4
+		width: 100%
+	.portfolio_item_5
+		width: 100%
+	.portfolio_item_6
+		width: 100%
+
+@media (max-width: 991.98px)
+	.stat_item
+		margin: 30px auto
+	.header
+		&_main
+			h1
+				font-size: 48px
+	.portfolio_item_1
+		width: 75%
+		margin: 30px auto
+		height: 340px
+	.portfolio_item_2
+		width: 75%
+		margin: 30px auto
+		height: 340px
+	.portfolio_item_3
+		width: 75%
+		margin: 30px auto
+		height: 340px
+	.portfolio_item_4
+		width: 75%
+		margin: 30px auto
+		height: 340px
+	.portfolio_item_5
+		width: 75%
+		margin: 30px auto
+		height: 340px
+	.portfolio_item_6
+		width: 75%
+		margin: 30px auto
+	.footer
+		&_bot
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			text-align: center
+
+		p
+			transform: translateX(0)
+			text-align: center
+			padding-right: 0
+			margin: 0
+			margin-top: 15px
+		&_socials
+			margin: 10px auto
+
+
+
+
+
+@media (max-width: 768px)
+	.mobile_menu
+		display: block
+	.bot_btn
+		display: none
+	.hidden-med
+		display: none
+	.nav_btn
+		display: block
+		position: absolute
+		right: 30px
+		border: none
+		background-color: transparent
+		font-size: 18px
+	.header_main 
+		margin-top: 50px
+		text-align: center
+		img
+			width: 350px
+			transform: translateY(0)
+			margin-top: 50px
+	.about
+		text-align: center
+		.title
+			max-width: 100%
+			margin-bottom: 45px
+			font-size: 32px
+			&:before
+				margin-left: auto
+				margin-right: auto
+		p
+			width: 85%
+			margin-left: auto
+			margin-right: auto
+		&_btn
+			margin-bottom: 30px
+	.services
+		.title
+			font-size: 32px
+	.skills
+		.title
+			font-size: 32px
+	.portfolio
+		.title
+			font-size: 32px
+	.test
+		.title
+			font-size: 32px
+		&_slider
+			padding: 20px
+			padding-bottom: 80px
+			h4
+				font-size: 24px
+			p
+				line-height: 1.2
+				text-transform: capitalize
+				font-size: 14px
+			span
+				margin-bottom: 20px
+		&_flex
+			flex-direction: column
+			text-align: center
+		&_info
+			margin: 0
+	.bot
+		.title
+			font-size: 32px
+		.form
+			&_input
+				input
+					margin-bottom: 10px
+					width: 85%
+				textarea
+					width: 85%
+
+
+
+@media (max-width: 576px)
+	.container
+		padding-left: 15px !important
+		padding-right: 15px !important
+	.portfolio_item_1
+		height: 300px
+	.portfolio_item_2
+		height: 300px
+	.portfolio_item_3
+		height: 300px
+	.portfolio_item_4
+		height: 300px
+	.portfolio_item_5
+		height: 300px
+	.portfolio_item_6
+		height: 300px
+	.stat_item
+		h5
+			font-size: 18px
+
+@media (max-width: 430px)
+	.header_main
+		img
+			width: 250px
+			margin-top: 80px
+		h1
+			font-size: 32px
+		h3
+			font-size: 18px
+	.btn
+		&_1
+			display: block
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 20px
+	.portfolio_item_1
+		width: 100%
+	.portfolio_item_2
+		width: 100%
+	.portfolio_item_3
+		width: 100%
+	.portfolio_item_4
+		width: 100%
+	.portfolio_item_5
+		width: 100%
+	.portfolio_item_6
+		width: 100%
+
+
+
+
+
+
+
+
+
+
+
